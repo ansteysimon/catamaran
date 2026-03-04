@@ -58,7 +58,7 @@ catamaran/
 ## Saving Results to GitHub
 
 ```bash
-git add catamaran_models.json
+git add search_results.json
 git commit -m "Update listings $(date +%Y-%m-%d)"
 git push
 ```

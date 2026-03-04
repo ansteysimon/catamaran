@@ -12,6 +12,9 @@ import argparse
 import json
 import sys
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn
 from rich.table import Table
@@ -21,7 +24,7 @@ from scrape import scrape_listing
 from update import merge_listings
 
 console = Console()
-DATA_FILE = Path("catamaran_models.json")
+DATA_FILE = Path("search_results.json")
 GITHUB_URL = "https://raw.githubusercontent.com/ansteysimon/catamaran/main/catamaran_models.json"
 
 

@@ -8,15 +8,24 @@ import anthropic
 client = anthropic.Anthropic()
 
 LISTING_SITES = [
-    "yachtworld.com", "rightboat.com", "apolloduck.com",
-    "boats.com", "ybw.com", "boattrader.com", "ancasta.co.uk",
-    "multihullsolutions.co.uk", "catamaransite.com", "sailboatlistings.com",
+    "yachtworld.co.uk",
+    "boats.com",
+    "rightboat.com",
+    "apolloduck.com",
+    "boattrader.com",
+    "ybw.com",
+    "ancasta.com",
+    "multihullsolutions.co.uk",
+    "catamaransite.com",
+    "sailboatlistings.com",
 ]
 
-SYSTEM_PROMPT = """You are a marine listing researcher. Use web_search to find second-hand catamaran listings.
+_SITE_CONSTRAINTS = " OR ".join(f"site:{s}" for s in LISTING_SITES)
+
+SYSTEM_PROMPT = f"""You are a marine listing researcher. Use web_search to find second-hand catamaran listings.
 Return ONLY a JSON array of URL strings — actual listing pages, not search result pages.
 No markdown, no explanation, just a raw JSON array like: ["https://...", "https://..."]
-Only include URLs from genuine boat listing sites. Maximum 10 URLs."""
+Only include URLs from these sites: {", ".join(LISTING_SITES)}. Maximum 10 URLs."""
 
 
 def find_listing_urls(model: dict) -> list[str]:
@@ -24,8 +33,7 @@ def find_listing_urls(model: dict) -> list[str]:
     query = (
         f'{model["search_query"]} '
         f'year:{model["year_from"]}-{model["year_to"]} '
-        f'site:yachtworld.com OR site:rightboat.com OR site:apolloduck.com '
-        f'OR site:boats.com OR site:ybw.com OR site:multihullsolutions.co.uk'
+        f'{_SITE_CONSTRAINTS}'
     )
 
     response = client.messages.create(
@@ -51,6 +59,6 @@ def find_listing_urls(model: dict) -> list[str]:
 
     try:
         urls = json.loads(text[start:end + 1])
-        return [u for u in urls if isinstance(u, str) and u.startswith("http")]
+        return [u for u in urls if isinstance(u, str) and any(s in u for s in LISTING_SITES)]
     except json.JSONDecodeError:
         return []

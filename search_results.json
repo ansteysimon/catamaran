@@ -1,0 +1,92 @@
+[
+  {
+    "make": "Outremer",
+    "model": "45",
+    "year_from": 2003,
+    "year_to": 2026,
+    "search_query": "Outremer 45 catamaran for sale",
+    "listings": [
+      {
+        "url": "https://www.rightboat.com/boats-for-sale/outremer-yachting/outremer-45-fba83f95-62ca-4205-bc8f-4dd8db35eeb5/rb363121",
+        "source": "rightboat.com",
+        "date_found": "2026-03-04",
+        "price": null,
+        "currency": "EUR",
+        "year": null,
+        "location": null,
+        "length_ft": null,
+        "description": null,
+        "photos": [
+          "https://www.rightboat.com/boat_images/image_30329974/thumb_df1d418be89d4224a8db5f2b1e39ddf79edbc314e15441daa306fbec30ad0c82.webp",
+          "https://www.rightboat.com/broker_logos/3804/thumb_oalogo2.png",
+          "https://www.rightboat.com/boat_images/image_29604837/thumb_259f730900924964a6be831fe54a33fd2f00dcead9ef4ae8a47f1a6f27926db6.webp",
+          "https://www.rightboat.com/boat_images/image_30235805/thumb_844d136e1173427fb06df785aa2cdad30fccc1a453724be0b6fc92e4be624418.webp",
+          "https://www.rightboat.com/boat_images/image_23479265/thumb_3c40c2b45b4c4b8381b7de3d87d256370d14b7cb9b994c35a13b3dcc68fce825.webp"
+        ]
+      },
+      {
+        "url": "https://www.rightboat.com/boats-for-sale/outremer/45/rb363121",
+        "source": "rightboat.com",
+        "date_found": "2026-03-04",
+        "price": null,
+        "currency": "EUR",
+        "year": null,
+        "location": null,
+        "length_ft": null,
+        "description": null,
+        "photos": []
+      },
+      {
+        "url": "https://www.rightboat.com/boats-for-sale/outremer-yachting/outremer-45-fba83f95-62ca-4205-bc8f-4dd8db35eeb5/rb344177",
+        "source": "rightboat.com",
+        "date_found": "2026-03-04",
+        "price": null,
+        "currency": "EUR",
+        "year": null,
+        "location": null,
+        "length_ft": null,
+        "description": null,
+        "photos": []
+      }
+    ],
+    "last_searched": "2026-03-05"
+  },
+  {
+    "make": "Outremer",
+    "model": "4X",
+    "year_from": 2020,
+    "year_to": 2026,
+    "search_query": "Outremer 4X catamaran for sale",
+    "listings": [
+      {
+        "url": "https://www.rightboat.com/boats-for-sale/outremer/4x/rb242233",
+        "source": "rightboat.com",
+        "date_found": "2026-03-05",
+        "price": null,
+        "currency": "EUR",
+        "year": null,
+        "location": null,
+        "length_ft": null,
+        "description": null,
+        "photos": []
+      }
+    ],
+    "last_searched": "2026-03-05"
+  },
+  {
+    "make": "Nautitech",
+    "model": "40 Open",
+    "year_from": 2019,
+    "year_to": 2026,
+    "search_query": "Nautitech 40 Open catamaran for sale",
+    "listings": []
+  },
+  {
+    "make": "Nautitech",
+    "model": "40 Open Owners Version",
+    "year_from": 2019,
+    "year_to": 2026,
+    "search_query": "Nautitech 40 Open Owners Version catamaran for sale",
+    "listings": []
+  }
+]
